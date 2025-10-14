@@ -56,30 +56,21 @@ export default function Home() {
     balloonContainer.appendChild(fragment);
   };
 
-  const removeBalloons = () => {
-    const balloonContainer = balloonContainerRef.current;
-    if (!balloonContainer) return;
-    setTimeout(() => {
-      const balloons = balloonContainer.querySelectorAll('.balloon');
-      balloons.forEach((balloon) => balloon.remove());
-    }, 300);
-  };
-
-  useEffect(() => {
+  const handlePlayMusic = () => {
     const audio = audioRef.current;
     if (!audio) return;
-    audio.volume = 0.4;
+    if (!audio.ended && !audio.paused) {
+      // If already playing, do nothing
+      return;
+    }
+    audio.volume = 0.5;
     audio.play().catch((e) => {
       console.warn('Autoplay prevented:', e);
     });
+  };
+
+  useEffect(() => {
     createBalloons(30);
-
-    const handleClick = () => removeBalloons();
-    window.addEventListener('click', handleClick, { passive: true });
-
-    return () => {
-      window.removeEventListener('click', handleClick);
-    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -89,8 +80,8 @@ export default function Home() {
       id='balloon-container'
       className='h-screen overflow-hidden p-4 box-border flex justify-center flex-wrap transition-opacity duration-300 relative'
     >
-      <main className='flex min-h-screen flex-col items-center p-5 pt-30 gap-5 absolute z-20 pointer-events-none'>
-        <h1 className='text-pink-500 dark:text-pink-300 font-mogra text-5xl lg:text-8xl text-center wave-text'>
+      <main className='flex min-h-screen flex-col items-center p-5 pt-36 gap-5 absolute z-20 '>
+        <h1 className='text-pink-500 font-mogra text-4xl sm:text-5xl lg:text-8xl text-center wave-text'>
           <span>H</span>
           <span>A</span>
           <span>P</span>
@@ -105,12 +96,13 @@ export default function Home() {
           <span>D</span>
           <span>A</span>
           <span>Y</span>
+          <br className='lg:hidden' />
           <span>&nbsp;</span>
-          <span>A</span>
-          <span>Z</span>
-          <span>H</span>
-          <span>A</span>
-          <span>R</span>
+          <span className='text-violet-600'>A</span>
+          <span className='text-violet-600'>Z</span>
+          <span className='text-violet-600'>H</span>
+          <span className='text-violet-600'>A</span>
+          <span className='text-violet-600'>R</span>
           <span>!</span>
           <span>!</span>
           <span>!</span>
@@ -125,6 +117,12 @@ export default function Home() {
             priority
           />
         </div>
+        <button
+          onClick={handlePlayMusic}
+          className='py-2 px-3 text-lg rounded-2xl bg-white border-1 border-pink-400 font-comicRelief text-pink-500 hover:bg-pink-50 active:scale-95 transition cursor-pointer'
+        >
+          Play some music 😎
+        </button>
         <audio hidden ref={audioRef}>
           <source src='song.mp3' type='audio/mpeg' />
           Your browser does not support the audio element.
