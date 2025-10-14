@@ -4,6 +4,12 @@ body {
   background: url('/confetti-bg.jpg');
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    background: url('/confetti-bg-mobile.jpg');
+  }
+}
+
 .font-mogra {
   font-family: var(--font-mogra);
 }

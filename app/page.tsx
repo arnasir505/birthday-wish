@@ -32,12 +32,12 @@ export default function Home() {
     ml: number;
     dur: number;
   }) =>
-    `background-color: rgba(${r},${g},${b},0.7);
-     color: rgba(${r},${g},${b},0.7); 
+    `background-color: rgba(${r},${g},${b},0.9);
+     color: rgba(${r},${g},${b},0.9); 
      box-shadow: inset -7px -3px 10px rgba(${Math.max(r - 10, 0)},${Math.max(
       g - 10,
       0
-    )},${Math.max(b - 10, 0)},0.7);
+    )},${Math.max(b - 10, 0)},0.9);
      margin: ${mt}px 0 0 ${ml}px;
      animation: float ${dur}s ease-in infinite;`;
 
@@ -80,8 +80,8 @@ export default function Home() {
       id='balloon-container'
       className='h-screen overflow-hidden p-4 box-border flex justify-center flex-wrap transition-opacity duration-300 relative'
     >
-      <main className='flex min-h-screen flex-col items-center p-5 pt-36 gap-5 absolute z-20 '>
-        <h1 className='text-pink-500 font-mogra text-4xl sm:text-5xl lg:text-8xl text-center wave-text'>
+      <main className='flex min-h-screen flex-col items-center p-5 gap-5 absolute z-20 '>
+        {/* <h1 className='text-pink-500 font-mogra text-4xl sm:text-5xl lg:text-8xl text-center wave-text'>
           <span>H</span>
           <span>A</span>
           <span>P</span>
@@ -106,7 +106,73 @@ export default function Home() {
           <span>!</span>
           <span>!</span>
           <span>!</span>
-        </h1>
+        </h1> */}
+        <div className='texturizer-content p-1 text-4xl lg:text-6xl text-center'>
+          <div id='ransomizer-bpkquil7'>
+            <div className='ts'>
+              <div className='tw'>
+                <div data-text='H' className='mlvx-0 tc'>
+                  <div data-text='H'>H</div>
+                </div>
+                <div data-text='A' className='mlvx-1 tc'>
+                  <div data-text='A'>A</div>
+                </div>
+                <div data-text='P' className='mlvx-2 tc'>
+                  <div data-text='P'>P</div>
+                </div>
+                <div data-text='P' className='mlvx-3 tc'>
+                  <div data-text='P'>P</div>
+                </div>
+                <div data-text='Y' className='mlvx-4 tc'>
+                  <div data-text='Y'>Y</div>
+                </div>
+              </div>
+              <div className='tw'>
+                <div data-text='B' className='mlvx-6 tc'>
+                  <div data-text='B'>B</div>
+                </div>
+                <div data-text='I' className='mlvx-7 tc'>
+                  <div data-text='I'>I</div>
+                </div>
+                <div data-text='R' className='mlvx-8 tc'>
+                  <div data-text='R'>R</div>
+                </div>
+                <div data-text='T' className='mlvx-9 tc'>
+                  <div data-text='T'>T</div>
+                </div>
+                <div data-text='H' className='mlvx-10 tc'>
+                  <div data-text='H'>H</div>
+                </div>
+                <div data-text='D' className='mlvx-11 tc'>
+                  <div data-text='D'>D</div>
+                </div>
+                <div data-text='A' className='mlvx-12 tc'>
+                  <div data-text='A'>A</div>
+                </div>
+                <div data-text='Y' className='mlvx-13 tc'>
+                  <div data-text='Y'>Y</div>
+                </div>
+              </div>
+              <div className='tw'>
+                <div data-text='A' className='mlvx-15 tc'>
+                  <div data-text='A'>A</div>
+                </div>
+                <div data-text='Z' className='mlvx-16 tc'>
+                  <div data-text='Z'>Z</div>
+                </div>
+                <div data-text='H' className='mlvx-17 tc'>
+                  <div data-text='H'>H</div>
+                </div>
+                <div data-text='A' className='mlvx-18 tc'>
+                  <div data-text='A'>A</div>
+                </div>
+                <div data-text='R' className='mlvx-19 tc'>
+                  <div data-text='R'>R</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className='flex items-center justify-between w-full max-w-xl'>
           <Image
             className='relative w-full h-auto'
