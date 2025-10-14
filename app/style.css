@@ -3,69 +3,90 @@
   --global-text-align: left;
 }
 
-.wave-text span {
+.wave-text span,
+.tc {
   display: inline-block;
   animation: wave 1s ease-in-out infinite;
 }
 
-.wave-text span:nth-child(1) {
+.wave-text span:nth-child(1),
+.mlvx-0 {
   animation-delay: 0s;
 }
-.wave-text span:nth-child(2) {
+.wave-text span:nth-child(2),
+.mlvx-1 {
   animation-delay: 0.2s;
 }
-.wave-text span:nth-child(3) {
+.wave-text span:nth-child(3),
+.mlvx-2 {
   animation-delay: 0.4s;
 }
-.wave-text span:nth-child(4) {
+.wave-text span:nth-child(4),
+.mlvx-3 {
   animation-delay: 0.6s;
 }
-.wave-text span:nth-child(5) {
+.wave-text span:nth-child(5),
+.mlvx-4 {
   animation-delay: 0.8s;
 }
-.wave-text span:nth-child(6) {
+.wave-text span:nth-child(6),
+.mlvx-5 {
   animation-delay: 1s;
 }
-.wave-text span:nth-child(7) {
+.wave-text span:nth-child(7),
+.mlvx-6 {
   animation-delay: 1.2s;
 }
-.wave-text span:nth-child(8) {
+.wave-text span:nth-child(8),
+.mlvx-7 {
   animation-delay: 1.4s;
 }
-.wave-text span:nth-child(9) {
+.wave-text span:nth-child(9),
+.mlvx-8 {
   animation-delay: 1.6s;
 }
-.wave-text span:nth-child(10) {
+.wave-text span:nth-child(10),
+.mlvx-9 {
   animation-delay: 1.8s;
 }
-.wave-text span:nth-child(11) {
+.wave-text span:nth-child(11),
+.mlvx-10 {
   animation-delay: 2s;
 }
-.wave-text span:nth-child(12) {
+.wave-text span:nth-child(12),
+.mlvx-11 {
   animation-delay: 2.2s;
 }
-.wave-text span:nth-child(13) {
+.wave-text span:nth-child(13),
+.mlvx-12 {
   animation-delay: 2.4s;
 }
-.wave-text span:nth-child(14) {
+.wave-text span:nth-child(14),
+.mlvx-13 {
   animation-delay: 2.6s;
 }
-.wave-text span:nth-child(15) {
+.wave-text span:nth-child(15),
+.mlvx-14 {
   animation-delay: 2.8s;
 }
-.wave-text span:nth-child(16) {
+.wave-text span:nth-child(16),
+.mlvx-15 {
   animation-delay: 3s;
 }
-.wave-text span:nth-child(17) {
+.wave-text span:nth-child(17),
+.mlvx-16 {
   animation-delay: 3.2s;
 }
-.wave-text span:nth-child(18) {
+.wave-text span:nth-child(18),
+.mlvx-17 {
   animation-delay: 3.4s;
 }
-.wave-text span:nth-child(19) {
+.wave-text span:nth-child(19),
+.mlvx-18 {
   animation-delay: 3.6s;
 }
-.wave-text span:nth-child(20) {
+.wave-text span:nth-child(20),
+.mlvx-19 {
   animation-delay: 3.8s;
 }
 .wave-text span:nth-child(21) {
