@@ -32,12 +32,12 @@ export default function Home() {
     ml: number;
     dur: number;
   }) =>
-    `background-color: rgba(${r},${g},${b},0.9);
-     color: rgba(${r},${g},${b},0.9); 
+    `background-color: rgba(${r},${g},${b},0.95);
+     color: rgba(${r},${g},${b},0.95); 
      box-shadow: inset -7px -3px 10px rgba(${Math.max(r - 10, 0)},${Math.max(
       g - 10,
       0
-    )},${Math.max(b - 10, 0)},0.9);
+    )},${Math.max(b - 10, 0)},0.95);
      margin: ${mt}px 0 0 ${ml}px;
      animation: float ${dur}s ease-in infinite;`;
 
